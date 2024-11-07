@@ -26,7 +26,7 @@ function getFFI(): ?FFI
             __DIR__ . match ([$os, $arch]) {
                 ["Darwin", "arm64"] => '/../lib/universal2-apple-darwin/liblibsql.dylib',
                 ["Darwin", "x86_64"] => '/../lib/universal2-apple-darwin/liblibsql.dylib',
-                ["Linux", "x86_64"] => '/../lib/x86_64-unknown-linux-musl/liblibsql.so',
+                ["Linux", "x86_64"] => '/../lib/x86_64-unknown-linux-gnu/liblibsql.so',
                 ["Linux", "aarch64"] => '/../lib/aarch64-unknown-linux-musl/liblibsql.so',
                 default => die("Unsupported OS $os $arch"),
             },
